@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:regular,500,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:regular,500,700);
 @import url(https://fonts.googleapis.com/css?family=Dosis:300,regular,500,700);
 
 body {
@@ -25,12 +25,12 @@ body {
   height: 100px;
 }
 .header__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    min-height: 100px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 .header_logo {
 }
@@ -40,13 +40,13 @@ body {
   width: 40px;
   height: 40px;
   background-color: #fff;
-  border-radius:5px;
+  border-radius: 5px;
   position: relative;
   z-index: 2;
   cursor: pointer;
 }
-.burger_menu:hover{
-    background-color: #efecec;
+.burger_menu:hover {
+  background-color: #efecec;
 }
 .burger_menu span {
   width: 15px;
@@ -55,7 +55,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #2B4074;
+  background-color: #2b4074;
   transition: all 0.5s;
 }
 .burger_menu span:nth-last-of-type(2) {
@@ -67,4 +67,73 @@ body {
 }
 .burger_menu span:nth-last-of-type(3) {
   top: calc(50% + 5px);
+}
+/*------- Main -------  */
+.main_start {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/bg_main.jpg) center/cover no-repeat;
+  width: 100%;
+  height: 668px;
+}
+.main__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 107px 0px;
+}
+.main_title {
+  color: #fff;
+  text-align: center;
+  font-family: Roboto Condensed;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 96px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.text {
+  color: #fff;
+  text-align: center;
+  font-family: Roboto Condensed;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 18px 0px;
+  width: 886px;
+  height: 66px;
+}
+.butn_blue {
+  background-color: #2b4074;
+  width: 200px;
+  height: 50px;
+  color: #f9f6e5;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin: 28px 0px;
+}
+.butn_blue:hover {
+  background-color: #1b336f;
+}
+#pagination {
+  margin: 123px 0px;
+}
+/*------- Navigation -------  */
+#navigation {
+  position: absolute;
+    top: 35%; 
+    right: 10px;
+    z-index: 1;
 }
