@@ -1,0 +1,70 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular,500,700);
+@import url(https://fonts.googleapis.com/css?family=Dosis:300,regular,500,700);
+
+body {
+  font-size: 16px;
+  font-family: Roboto;
+  height: 100%;
+}
+
+[class*="__container"] {
+  max-width: 1183px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+  display: flex;
+  flex-direction: column;
+}
+/*------- Header menu -------  */
+.header {
+  background-color: #2b4074;
+  height: 100px;
+}
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.header_logo {
+}
+/*------- Burger menu -------  */
+.burger_menu {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius:5px;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+.burger_menu:hover{
+    background-color: #efecec;
+}
+.burger_menu span {
+  width: 15px;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #2B4074;
+  transition: all 0.5s;
+}
+.burger_menu span:nth-last-of-type(2) {
+  top: calc(50% - 5px);
+}
+.burger_menu span:nth-last-of-type(3) {
+  top: calc(50% + 5px);
+  top: calc(50% - 5px);
+}
+.burger_menu span:nth-last-of-type(3) {
+  top: calc(50% + 5px);
+}
