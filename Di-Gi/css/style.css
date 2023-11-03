@@ -20,6 +20,30 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+/*------- Standart style -------  */
+.title {
+  color: #2b4074;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Roboto Condensed;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0px 0px 64px 0px;
+}
+.subtitle {
+  color: #797979;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  width: 351px;
+  height: 68px;
+  margin: 34px 0px;
+}
 /*------- Header menu -------  */
 .header {
   background-color: #2b4074;
@@ -180,4 +204,77 @@ body {
 }
 .btn_white:hover {
   background-color: #efecec;
+}
+/*------- Service -------  */
+.Service__container {
+}
+.Service_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Service_info {
+  margin: 90px 0px;
+}
+.service_text {
+  color: #4a4a4a;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  width: 393px;
+  height: 60px;
+  margin: 0px 0px 30px;
+}
+.blue_line {
+  width: 98.736px;
+  height: 8px;
+  background-color: #2b4074;
+}
+/*------- Card service -------  */
+.CardGrid {
+  display: grid;
+  align-items: center;
+  grid-gap: 100px;
+  margin: 0 100px;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-around;
+}
+.service_card {
+}
+.card_title {
+  color: #4a4a4a;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+.card_subtitle {
+  margin: 0px;
+  width: 196px;
+  height: 48px;
+  margin: 21px 0px 18px 0px;
+}
+#card_UX {
+  border: 3px solid #2b4074;
+  padding: 10px;
+  text-align: center;
+  width: 212px;
+  height: 255px;
+}
+.card_link {
+  color: #2b4074;
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2px;
 }

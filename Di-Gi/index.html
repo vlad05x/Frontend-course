@@ -1,53 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DI-GI</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/responsive.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+  </head>
+  <body>
     <div class="wrapper">
-        <header class="header">
-            <div class="header__container">
-                <div class="header_logo">
-                    <img src="./images/header_logo.svg" alt="logo">
-                </div>
-                <div class="burger_menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+      <header class="header">
+        <div class="header__container">
+          <div class="header_logo">
+            <img src="./images/header_logo.svg" alt="logo" />
+          </div>
+          <div class="burger_menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="main_start">
+          <div class="main__container">
+            <img id="navigation" src="./images/navigation.svg" alt="arrow" />
+            <div class="main_content">
+              <h1 class="main_title">
+                МИСЛИ <br />
+                ГЛОБАЛЬНО
+              </h1>
+              <p class="text">
+                Di Gі — це діджитал агенція повного циклу, спрямована на
+                найкращий результат наших клієнтів в маркетингу, продажах та
+                управленні
+              </p>
+              <button class="btn_blue">Детальніше</button>
+              <img
+                id="pagination"
+                src="./images/pagination.svg"
+                alt="navigation"
+              />
             </div>
-        </header>
-        <main class="main">
-            <div class="main_start">
-                <div class="main__container">
-                    <img id="navigation" src="./images/navigation.svg" alt="arrow">
-                    <div class="main_content">
-                        <h1 class="main_title">МИСЛИ <br>
-                            ГЛОБАЛЬНО</h1>
-                        <p class="text">Di Gі — це діджитал агенція повного циклу, спрямована на найкращий результат наших клієнтів в маркетингу, продажах та управленні</p>
-                        <button class="btn_blue">Детальніше</button>
-                        <img id="pagination" src="./images/pagination.svg" alt="navigation">
-                    </div>
-                </div>
+          </div>
+        </div>
+        <div class="RingMe">
+          <div class="RingMe__container">
+            <div class="RingMe_content">
+              <div class="RingMe_info">
+                <h1 class="ring_title">Ви полюбите нас з першої зустрічі!</h1>
+                <p class="ring_text">
+                  Ми надаємо комплексний підхід до просування компанії,
+                  продуктів та послуг в цифровій сфері.
+                </p>
+              </div>
+              <button class="btn_blue btn_white">передзвоніть мені</button>
             </div>
-            <div class="RingMe">
-                <div class="RingMe__container">
-                    <div class="RingMe_content">
-                        <div class="RingMe_info">
-                            <h1 class="ring_title">Ви полюбите нас з першої зустрічі!</h1>
-                            <p class="ring_text">Ми надаємо комплексний підхід до просування компанії,
-                                продуктів та послуг в цифровій сфері.</p>
-                        </div>
-                        <button class="btn_blue btn_white">передзвоніть мені</button>
-                    </div>
+          </div>
+        </div>
+        <div class="Service">
+          <div class="Service__container">
+            <div class="Service_content">
+              <div class="Service_info">
+                <h1 class="title">Сервіс</h1>
+                <p class="service_text">
+                  Від ідеї до незабутнього та вимірюваного результату.
+                </p>
+                <div class="blue_line"></div>
+                <p class="subtitle">
+                  Інтеграція бездоганного виробництва, передових технологій та
+                  ретельного вимірювання продуктивності
+                </p>
+              </div>
+              <div class="CardGrid">
+                <div class="service_card">
+                  <img src="./images/1.png" alt="image" />
+                  <h1 class="card_title">СТРАТЕГІЯ</h1>
                 </div>
+                <div class="service_card">
+                  <img src="./images/2.png" alt="image" />
+                  <h1 class="card_title">АНАЛІЗ</h1>
+                </div>
+                <div class="service_card">
+                  <img src="./images/3.png" alt="image" />
+                  <h1 class="card_title">СОЦ МЕРЕЖІ</h1>
+                </div>
+                <div class="service_card">
+                  <img src="./images/4.png" alt="image" />
+                  <h1 class="card_title">РОЗВИТОК</h1>
+                </div>
+                <div class="service_card">
+                  <img src="./images/5.png" alt="image" />
+                  <h1 class="card_title">КОНТЕНТ</h1>
+                </div>
+                <div class="service_card" id="card_UX">
+                  <img src="./images/6.png" alt="image" />
+                  <h1 class="card_title">ДИЗАЙН UX</h1>
+                  <p class="subtitle card_subtitle">Створимо унікальний та зручний дизайн</p>
+                  <a href="" class="card_link">ДЕТАЛЬНІШЕ →</a>
+                </div>
+                <div class="service_card">
+                  <img src="./images/7.png" alt="image" />
+                  <h1 class="card_title">ТАРГЕТОВАНА РЕКЛАМА</h1>
+                </div>
+                <div class="service_card">
+                  <img src="./images/8.png" alt="image" />
+                  <h1 class="card_title">ПРОДУКТ</h1>
+                </div>
+              </div>
             </div>
-        </main>
+          </div>
+        </div>
+      </main>
     </div>
-</body>
+  </body>
 </html>
