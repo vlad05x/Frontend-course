@@ -1,3 +1,4 @@
+/*------- Laptop -------  */
 @media screen and (max-width: 1025px) {
   .text {
     width: 787px;
@@ -12,7 +13,11 @@
     width: 44px;
     height: 113px;
   }
+  .ring_text{
+    margin-top: 15px;
+  }
 }
+/*------- Tablet -------  */
 @media screen and (max-width: 768px) {
   .text {
     width: 550px;
@@ -20,6 +25,16 @@
   }
   .main_title {
     font-size: 60px;
+  }
+  .RingMe_content {
+    display: flex;
+    align-items:center;
+  }
+  .ring_text{
+    margin-top: 30px;
+  }
+  .RingMe{
+    height: 187px;
   }
 }
 @media screen and (max-width: 720px) {
@@ -30,6 +45,23 @@
     margin-top: 80px;
   }
 }
+/*------- Phone -------  */
+@media screen and (max-width:650px){
+  .RingMe_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+  }
+  .ring_text{
+    margin-top: 10px;
+    width: auto;
+  }
+  .btn_white{
+    margin-top: 40px;
+  }
+}
 @media screen and (max-width:520px){
     #navigation{
         display: none;
@@ -37,4 +69,10 @@
     .main_title{
         font-size: 50px;
     }
+    .RingMe{
+      height: 300px;
+    }
+}
+@media screen and (max-width:320px){
+
 }

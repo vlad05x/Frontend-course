@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:regular,500,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular,500,700);
 @import url(https://fonts.googleapis.com/css?family=Dosis:300,regular,500,700);
 
 body {
@@ -111,7 +112,7 @@ body {
   width: 886px;
   height: 66px;
 }
-.butn_blue {
+.btn_blue {
   background-color: #2b4074;
   width: 200px;
   height: 50px;
@@ -124,7 +125,7 @@ body {
   text-transform: uppercase;
   margin: 28px 0px;
 }
-.butn_blue:hover {
+.btn_blue:hover {
   background-color: #1b336f;
 }
 #pagination {
@@ -133,7 +134,50 @@ body {
 /*------- Navigation -------  */
 #navigation {
   position: absolute;
-    top: 35%; 
-    right: 10px;
-    z-index: 1;
+  top: 35%;
+  right: 10px;
+  z-index: 1;
+}
+/*------- Ring block -------  */
+.RingMe {
+  width: 100%;
+  height: 192px;
+  background-color: #2b4074;
+}
+.RingMe__container {
+  padding-top: 50px;
+}
+.RingMe_content {
+  display: flex;
+  justify-content: space-between;
+}
+.ring_title {
+  color: #fff;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+}
+.ring_text {
+  margin-top: 10px;
+  width: 396px;
+  height: 42px;
+  color: #fff;
+  font-family: Dosis;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 18px;
+}
+.btn_white {
+  margin: 0;
+  background-color: #fff;
+  color: #2b4074;
+  font-family: Roboto;
+  font-style: normal;
+}
+.btn_white:hover {
+  background-color: #efecec;
 }
