@@ -1,4 +1,9 @@
 /*------- Laptop -------  */
+@media screen and (max-width:1440px){
+  .CardGrid{
+    grid-gap: 80px;
+  }
+}
 @media screen and (max-width: 1025px) {
   .text {
     width: 787px;
@@ -13,8 +18,28 @@
     width: 44px;
     height: 113px;
   }
-  .ring_text{
+  .ring_text {
     margin-top: 15px;
+  }
+  .Service_content {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+  }
+  .service_text {
+    width: 661px;
+  }
+  .service_subtitle {
+    width: 600px;
+  }
+  .title {
+    text-align: center;
+  }
+  .Service_info {
+    width: 850px;
+  }
+  .service_card {
+    text-align: center;
   }
 }
 /*------- Tablet -------  */
@@ -28,51 +53,109 @@
   }
   .RingMe_content {
     display: flex;
-    align-items:center;
+    align-items: center;
   }
-  .ring_text{
+  .ring_text {
     margin-top: 30px;
   }
-  .RingMe{
+  .RingMe {
     height: 187px;
+  }
+  .Service_info {
+    width: 550px;
+  }
+  .CardGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    grid-gap: 158px;
   }
 }
 @media screen and (max-width: 720px) {
   .text {
     display: none;
   }
-  .butn_blue{
+  .butn_blue {
     margin-top: 80px;
   }
 }
 /*------- Phone -------  */
-@media screen and (max-width:650px){
+@media screen and (max-width: 650px) {
   .RingMe_content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     text-align: center;
   }
-  .ring_text{
+  .ring_text {
     margin-top: 10px;
     width: auto;
   }
-  .btn_white{
+  .btn_white {
     margin-top: 40px;
   }
+  .RingMe {
+    height: 300px;
+  }
+  .Service_info {
+    width: auto;
+  }
+  .Service_content {
+    align-items: center;
+    justify-content: center;
+  }
+  .service_text {
+    width: 500px;
+    text-align: center;
+  }
+  .blue_line {
+    margin: 0 auto;
+  }
+  .service_subtitle {
+    width: 500px;
+    text-align: center;
+  }
+  .CardGrid {
+    align-items: center;
+    justify-items: center;
+  }
 }
-@media screen and (max-width:520px){
-    #navigation{
-        display: none;
-    }
-    .main_title{
-        font-size: 50px;
-    }
-    .RingMe{
-      height: 300px;
-    }
+@media screen and (max-width: 520px) {
+  #navigation {
+    display: none;
+  }
+  .main_title {
+    font-size: 50px;
+  }
+  .RingMe {
+    height: 300px;
+  }
+  .CardGrid {
+    grid-template-columns: repeat(1, 200px);
+    align-items: center;
+    justify-items: center;
+    width: 254px;
+    height: 2293px;
+  }
+  .service_text {
+    width: 400px;
+    height: 70px;
+    text-align: center;
+  }
+  .blue_line {
+    margin: 0 auto;
+  }
+  .service_subtitle {
+    width: 390px;
+    text-align: center;
+  }
 }
-@media screen and (max-width:320px){
-
+@media screen and (max-width: 375px) {
+  .service_text{
+    width: auto;
+  }
+  .service_subtitle{
+    width: 300px;
+    margin: 34px auto;
+  }
 }

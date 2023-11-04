@@ -243,6 +243,7 @@ body {
   justify-content: space-around;
 }
 .service_card {
+  text-align: center;
 }
 .card_title {
   color: #4a4a4a;
