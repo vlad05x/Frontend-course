@@ -4,6 +4,17 @@
     grid-gap: 80px;
   }
 }
+@media screen and (max-width:1150px){
+    .cards_portfolio{
+      flex-wrap: wrap;
+      align-items:center;
+      justify-content: center; 
+      gap: 50px; 
+    }
+    .portfolio{
+      height: 3000px;
+    }
+}
 @media screen and (max-width: 1025px) {
   .text {
     width: 787px;
