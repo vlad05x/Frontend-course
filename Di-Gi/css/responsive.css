@@ -12,7 +12,7 @@
       gap: 50px; 
     }
     .portfolio{
-      height: 3000px;
+      height: auto;
     }
 }
 @media screen and (max-width: 1025px) {
@@ -51,6 +51,9 @@
   }
   .service_card {
     text-align: center;
+  }
+  .cards_portfolio{
+    width: 600px;
   }
 }
 /*------- Tablet -------  */
@@ -160,6 +163,9 @@
     width: 390px;
     text-align: center;
   }
+  .cards_portfolio{
+    width: 300px;
+  }
 }
 @media screen and (max-width: 375px) {
   .service_text{
@@ -168,5 +174,15 @@
   .service_subtitle{
     width: 300px;
     margin: 34px auto;
+  }
+  .white_title{
+    font-size: 24px;
+  }
+  .portfolio_content{
+    align-items:center;
+    justify-content: center;
+  }
+  .cards_portfolio{
+    margin: 30px auto;
   }
 }
