@@ -1,19 +1,19 @@
 /*------- Laptop -------  */
-@media screen and (max-width:1440px){
-  .CardGrid{
+@media screen and (max-width: 1440px) {
+  .CardGrid {
     grid-gap: 80px;
   }
 }
-@media screen and (max-width:1150px){
-    .cards_portfolio{
-      flex-wrap: wrap;
-      align-items:center;
-      justify-content: center; 
-      gap: 50px; 
-    }
-    .portfolio{
-      height: auto;
-    }
+@media screen and (max-width: 1150px) {
+  .cards_portfolio {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+  .portfolio {
+    height: auto;
+  }
 }
 @media screen and (max-width: 1025px) {
   .text {
@@ -46,13 +46,16 @@
   .title {
     text-align: center;
   }
+  .team_title {
+    text-align: start;
+  }
   .Service_info {
     width: 850px;
   }
   .service_card {
     text-align: center;
   }
-  .cards_portfolio{
+  .cards_portfolio {
     width: 600px;
   }
 }
@@ -82,6 +85,20 @@
     display: grid;
     grid-template-columns: repeat(2, 200px);
     grid-gap: 158px;
+  }
+  #team_image {
+    width: 240px;
+    height: 227px;
+  }
+  .team_subtitle {
+    width: 407px;
+    height: 235px;
+  }
+  .team_content{
+    margin-left: 20px;
+  }
+  .team_btn{
+    margin: 21px 248px 0px 0px ;
   }
 }
 @media screen and (max-width: 720px) {
@@ -133,6 +150,22 @@
     align-items: center;
     justify-items: center;
   }
+  #team_image{
+    display: none;
+  }
+  .team_content{
+    text-align: center;
+    margin: 0 auto;
+  }
+  .team_title{
+    text-align: center;
+  }
+  .team_btn{
+    margin: 36px auto;
+  }
+  .team_subtitle{
+    width: auto;
+    height: auto;
 }
 @media screen and (max-width: 520px) {
   #navigation {
@@ -163,26 +196,26 @@
     width: 390px;
     text-align: center;
   }
-  .cards_portfolio{
+  .cards_portfolio {
     width: 300px;
   }
 }
 @media screen and (max-width: 375px) {
-  .service_text{
+  .service_text {
     width: auto;
   }
-  .service_subtitle{
+  .service_subtitle {
     width: 300px;
     margin: 34px auto;
   }
-  .white_title{
+  .white_title {
     font-size: 24px;
   }
-  .portfolio_content{
-    align-items:center;
+  .portfolio_content {
+    align-items: center;
     justify-content: center;
   }
-  .cards_portfolio{
+  .cards_portfolio {
     margin: 30px auto;
   }
 }
