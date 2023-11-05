@@ -286,7 +286,7 @@ body {
 .portfolio {
   width: 100%;
   height: 668px;
-  background: linear-gradient(180deg, #2b4074 0%, rgba(43, 64, 116, 0) 100%);
+  background: linear-gradient(180deg, #2B4074 0%, rgba(43, 64, 116, 0.00) 100%);
 }
 .portfolio__container {
   display: flex;
@@ -313,13 +313,12 @@ body {
   gap: 20px;
   margin: 80px auto;
   position: relative;
-
 }
 .card_portfolio {
   width: 268px;
   height: 239px;
   text-align: center;
-  position: relative; 
+  position: relative;
 }
 .project_title {
   color: #2b4074;
@@ -339,8 +338,38 @@ body {
   right: 10px;
   width: 243px;
   height: 217px;
-  background: linear-gradient(rgba(249, 246, 229, 0.5), rgba(249, 246, 229, 0.5));
+  background: linear-gradient(
+    rgba(249, 246, 229, 0.5),
+    rgba(249, 246, 229, 0.5)
+  );
   display: flex;
   justify-content: center;
   align-items: center;
+}
+/*------- Team -------  */
+.team_block {
+  width: 100%;
+  height: 580px;
+}
+.team__container {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px auto;
+}
+.team_content {
+  height: auto;
+  padding: 80px auto;
+}
+.team_image {
+  width: 470px;
+  height: 430px;
+}
+.team_subtitle {
+  width: 506px;
+  height: 192px;
+}
+.team_btn {
+  width: 230px;
+  height: 60px;
+  margin: 0;
 }
