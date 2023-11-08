@@ -376,7 +376,7 @@ body {
 /*------- News -------  */
 .block_news {
   width: 100%;
-  height: 3044px;
+  height: auto;
   background-color: #f9f6e5;
 }
 .news__container {
