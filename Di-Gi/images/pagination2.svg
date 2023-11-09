@@ -1,0 +1,12 @@
+<svg width="50" height="10" viewBox="0 0 50 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="pagination" clip-path="url(#clip0_0_46)">
+<path id="Oval 1" fill-rule="evenodd" clip-rule="evenodd" d="M5 10C7.76142 10 10 7.76142 10 5C10 2.23858 7.76142 0 5 0C2.23858 0 0 2.23858 0 5C0 7.76142 2.23858 10 5 10Z" fill="#2B4074"/>
+<path id="Oval 2" fill-rule="evenodd" clip-rule="evenodd" d="M25 10C27.7614 10 30 7.76142 30 5C30 2.23858 27.7614 0 25 0C22.2386 0 20 2.23858 20 5C20 7.76142 22.2386 10 25 10Z" stroke="#476E4D"/>
+<path id="Oval 3" fill-rule="evenodd" clip-rule="evenodd" d="M45 10C47.7614 10 50 7.76142 50 5C50 2.23858 47.7614 0 45 0C42.2386 0 40 2.23858 40 5C40 7.76142 42.2386 10 45 10Z" fill="#2B4074"/>
+</g>
+<defs>
+<clipPath id="clip0_0_46">
+<rect width="50" height="10" fill="white"/>
+</clipPath>
+</defs>
+</svg>

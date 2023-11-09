@@ -180,7 +180,7 @@
     width: auto;
     height: auto;
   }
-  .block_images-news{
+  .block_images-news {
     grid-template-columns: repeat(1, 1fr);
     gap: 10px;
   }
@@ -235,5 +235,9 @@
   }
   .cards_portfolio {
     margin: 30px auto;
+  }
+  .text_marketing {
+    width: 275px;
+    height: auto;
   }
 }
