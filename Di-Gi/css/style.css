@@ -401,6 +401,7 @@ body {
 .image_content {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 .img-text-block {
   width: 270px;
@@ -417,9 +418,8 @@ body {
   transition: all 0.3s ease;
 }
 .image_news:hover {
-  border: 2px solid #2b4074;
   filter: brightness(60%) sepia(100%) hue-rotate(200deg);
-  transition: all 0.3s ease;
+  transition: all 0.8s ease;
 }
 .img-blue_block {
   position: relative;
@@ -438,4 +438,23 @@ body {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 2px;
+}
+.image_content::before {
+  content: url(../images/icons.svg);
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  color: #fff; 
+  opacity: 0;
+  transition: opacity 0.3s;
+  display: flex; 
+  align-items:center;
+  justify-content: center;
+}
+.image_content:hover::before {
+  opacity: 1;
 }
