@@ -476,23 +476,27 @@ body {
   text-align: center;
   font-feature-settings: "clig" off, "liga" off;
   font-family: Roboto Condensed;
-  font-size: 36px; font-style: normal; font-weight: 400;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
   line-height: normal;
   margin: 30px auto;
 }
 #blue_text {
-  color: #2B4074;
-font-feature-settings: 'clig' off, 'liga' off;
-font-family: Roboto Condensed;
-font-size: 36px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+  color: #2b4074;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Roboto Condensed;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 #bracket {
   color: #2b4074;
   font-family: FontAwesome;
-  font-size: 34px; font-style: normal; font-weight: 400;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 400;
   line-height: 14px;
 }
 .subtitle_marketing {
@@ -500,7 +504,9 @@ line-height: normal;
   text-align: center;
   font-feature-settings: "clig" off, "liga" off;
   font-family: Roboto Condensed;
-  font-size: 24px; font-style: normal; font-weight: 700;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
   line-height: normal;
   letter-spacing: 2px;
   margin: 30px auto;
@@ -510,3 +516,74 @@ line-height: normal;
   width: 50px;
   height: 10px;
 }
+/*------- Footer -------  */
+.footer {
+  width: 100%;
+  height: 639px;
+  background-color: #2b4074;
+}
+.footer_content {
+  margin: 158px auto;
+}
+.text-footer {
+  width: 450px;
+  height: 61px;
+  text-align: start;
+}
+.block_social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #7ebf84;
+  border-left: none;
+  border-right: none;
+  height: 63px;
+  margin: 80px auto;
+}
+.social {
+  display: flex;
+  align-items: center;
+  width: 25%;
+  justify-content: center;
+  position: relative;
+}
+.social img {
+  width: 20px;
+  height: 15px;
+}
+.social:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 61px;
+  background-color: #7ebf84;
+  left: 100%;
+  top: -10;
+}
+
+.block_widgets {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 180px;
+}
+.widgets{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: flex-start;
+}
+.footer_title{
+  color: #F9F6E5;
+  text-align: start;
+}
+.widgets_text {
+  color: #fff;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+

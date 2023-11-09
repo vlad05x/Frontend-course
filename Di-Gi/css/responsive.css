@@ -236,6 +236,9 @@
   .cards_portfolio {
     margin: 30px auto;
   }
+  .block_marketing{
+    height: 425px;
+  }
   .text_marketing {
     width: 275px;
     height: auto;
