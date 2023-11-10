@@ -67,6 +67,12 @@
   .cards_portfolio {
     width: 600px;
   }
+  .block_widgets {
+    gap: 150px;
+  }
+  .widgets {
+    flex: 0 0 10%;
+  }
 }
 /*------- Tablet -------  */
 @media screen and (max-width: 768px) {
@@ -113,6 +119,16 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
   }
+  .block_widgets {
+    gap: 80px;
+  }
+
+  .widgets {
+    flex: 0 0 30%;
+  }
+  .widgets_text {
+    margin: 22px auto;
+  }
 }
 @media screen and (max-width: 720px) {
   .text {
@@ -120,6 +136,9 @@
   }
   .butn_blue {
     margin-top: 80px;
+  }
+  .text-footer {
+    display: block;
   }
 }
 /*------- Phone -------  */
@@ -217,6 +236,24 @@
   .cards_portfolio {
     width: 300px;
   }
+  .widgets {
+    flex: 0 0 100%;
+  }
+  .text-footer {
+    text-align: center;
+    margin: 0 auto;
+    width: 274px;
+    height: 84px;
+  }
+  .block_social{
+    flex-direction: column;
+    border:none;
+    gap: 20px ;
+    height: auto;
+  }
+  .social:not(:last-child)::before{
+    display: none;
+  }
 }
 @media screen and (max-width: 375px) {
   .service_text {
@@ -236,7 +273,7 @@
   .cards_portfolio {
     margin: 30px auto;
   }
-  .block_marketing{
+  .block_marketing {
     height: 425px;
   }
   .text_marketing {
