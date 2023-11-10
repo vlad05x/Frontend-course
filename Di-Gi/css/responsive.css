@@ -67,6 +67,12 @@
   .cards_portfolio {
     width: 600px;
   }
+  .block_widgets {
+    gap: 150px;
+  }
+  .widgets {
+    flex: 0 0 10%;
+  }
 }
 /*------- Tablet -------  */
 @media screen and (max-width: 768px) {
@@ -113,6 +119,19 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
   }
+  .block_widgets {
+    gap: 80px;
+  }
+  .widgets {
+    flex: 0 0 30%;
+    margin: 0 auto;
+  }
+  .widgets_text {
+    margin: 0 auto;
+  }
+  .block_btn{
+    left: 36%;
+  }
 }
 @media screen and (max-width: 720px) {
   .text {
@@ -120,6 +139,9 @@
   }
   .butn_blue {
     margin-top: 80px;
+  }
+  .text-footer {
+    display: block;
   }
 }
 /*------- Phone -------  */
@@ -184,6 +206,9 @@
     grid-template-columns: repeat(1, 1fr);
     gap: 10px;
   }
+  .block_btn{
+    left: 32%;
+  }
 }
 @media screen and (max-width: 520px) {
   #navigation {
@@ -217,6 +242,31 @@
   .cards_portfolio {
     width: 300px;
   }
+  .widgets {
+    flex: 0 0 100%;
+  }
+  .text-footer {
+    text-align: center;
+    margin: 0 auto;
+    width: 274px;
+    height: 84px;
+  }
+  .block_social {
+    flex-direction: column;
+    border: none;
+    gap: 20px;
+    height: auto;
+  }
+  .social:not(:last-child)::before {
+    display: none;
+  }
+  .social img {
+    width: 23.017px;
+    height: 24px;
+  }
+  .block_btn{
+    left: 25%;
+  }
 }
 @media screen and (max-width: 375px) {
   .service_text {
@@ -236,11 +286,17 @@
   .cards_portfolio {
     margin: 30px auto;
   }
-  .block_marketing{
-    height: 425px;
+  .block_marketing {
+    height: auto;
   }
   .text_marketing {
     width: 275px;
     height: auto;
+  }
+  .team_block{
+    height: 650px;
+  }
+  .block_btn{
+    left: 20%;
   }
 }
