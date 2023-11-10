@@ -519,7 +519,7 @@ body {
 /*------- Footer -------  */
 .footer {
   width: 100%;
-  height: 639px;
+  height: auto;
   background-color: #2b4074;
 }
 .footer_content {
@@ -566,6 +566,7 @@ body {
   align-items: center;
   justify-content: flex-start;
   gap: 180px;
+  flex-wrap: wrap;
 }
 .widgets{
   display: flex;
