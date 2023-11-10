@@ -330,6 +330,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  cursor: pointer;
 }
 .portfolio_info-bg {
   position: absolute;
@@ -345,6 +346,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s; 
+}
+.card_portfolio:hover .portfolio_info-bg {
+  opacity: 1;
 }
 /*------- Team -------  */
 .team_block {
