@@ -522,7 +522,7 @@ body {
   height: auto;
   background-color: #2b4074;
 }
-.footer__container{
+.footer__container {
   position: relative;
 }
 .footer_content {
@@ -532,15 +532,15 @@ body {
   width: 450px;
   height: 61px;
   text-align: start;
-} 
+}
 .block_btn {
   position: absolute;
   top: -190px;
-  left: 40%; 
+  left: 40%;
   width: 230px;
   height: auto;
-  background-color: #2B4074;
-  padding: 0 60px; 
+  background-color: #2b4074;
+  padding: 0 60px;
 }
 .block_social {
   display: flex;
