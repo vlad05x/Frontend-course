@@ -147,3 +147,14 @@ function showPosition (position){
   "<br>Довгота: " + position.coords.longitude;
 }
 getLocation();
+
+// Task 13
+const BtnScrollUp = document.getElementById("butt_scroll");
+BtnScrollUp.addEventListener("click", ScrollUp);
+
+function ScrollUp () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}
