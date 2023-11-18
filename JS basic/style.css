@@ -146,7 +146,7 @@ body {
   font-size: 20px;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-/* Task 13 */
+/* Task 14 */
 #butt_scroll{
   width: 100px;
   height: 50px;
@@ -154,7 +154,14 @@ body {
   margin: 0 20px;
   border-radius: 30px;
   cursor: pointer;
+  opacity: 0;
+  transform: translateY(20px);
 }
 #butt_scroll:hover{
   background-color: rgb(193, 151, 233);
+}
+#butt_scroll.element-show {
+  opacity: 1;
+  transition: all 1.5s;
+  transform: translateY(0%);
 }
