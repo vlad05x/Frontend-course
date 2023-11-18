@@ -121,48 +121,53 @@ function ShowImg() {
 }
 
 // Task 10
-document.querySelector('.blockCursor').onmousemove = function(event){
+document.querySelector(".blockCursor").onmousemove = function (event) {
   // console.log(event);
-  document.querySelector('#offx').innerHTML = event.offsetX;
-  document.querySelector('#offy').innerHTML = event.offsetY;
-}
+  document.querySelector("#offx").innerHTML = event.offsetX;
+  document.querySelector("#offy").innerHTML = event.offsetY;
+};
 
 // Task 11
 let userLanguage = navigator.language;
-let infoLanguage = document.querySelector(".info-language").innerHTML = "Language: " + userLanguage; 
+let infoLanguage = (document.querySelector(".info-language").innerHTML =
+  "Language: " + userLanguage);
 
 // Task 12
 let BlockPosition = document.querySelector("._position");
 let locationElement = document.querySelector(".location");
 
-function getLocation(){
-  if(navigator.geolocation){
+function getLocation() {
+  if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(showPosition);
   } else {
     locationElement.innerHTML = "Позицію не найдено";
   }
 }
-function showPosition (position){
-  locationElement.innerHTML = "Широта: " + position.coords.latitude +
-  "<br>Довгота: " + position.coords.longitude;
+function showPosition(position) {
+  locationElement.innerHTML =
+    "Широта: " +
+    position.coords.latitude +
+    "<br>Довгота: " +
+    position.coords.longitude;
 }
 getLocation();
 
 // Task 14
 function onEntry(entry) {
-  entry.forEach(change => {
+  entry.forEach((change) => {
     if (change.isIntersecting) {
-     change.target.classList.add('element-show');
+      change.target.classList.add("element-show");
     } else {
-      change.target.classList.remove('element-show');
+      change.target.classList.remove("element-show");
     }
   });
 }
 
 let options = {
-  threshold: [0.5] };
+  threshold: [0.5],
+};
 let observer = new IntersectionObserver(onEntry, options);
-let elements = document.querySelectorAll('#butt_scroll');
+let elements = document.querySelectorAll("#butt_scroll");
 
 for (let elm of elements) {
   observer.observe(elm);
@@ -171,9 +176,33 @@ for (let elm of elements) {
 const BtnScrollUp = document.getElementById("butt_scroll");
 BtnScrollUp.addEventListener("click", ScrollUp);
 
-function ScrollUp () {
+function ScrollUp() {
   window.scrollTo({
     top: 0,
-    behavior: "smooth"
+    behavior: "smooth",
   });
 }
+
+// Task 15
+let BigBox = document.querySelector(".block1");
+let SmallBox = document.querySelector(".block2");
+
+BigBox.addEventListener("click", () => {
+  alert("This is big box!");
+});
+SmallBox.addEventListener("click", () => {
+  alert("This is small box!");
+});
+
+// Task 16
+let BigBtn = document.getElementById("btnShow"); 
+let TransparentBlock = document.querySelector(".block_shodow");
+
+BigBtn.addEventListener("click", () => {
+  TransparentBlock.style.display = "block";
+  document.body.style.overflow = 'hidden';
+});
+TransparentBlock.addEventListener("click", () => {
+  TransparentBlock.style.display = "none";
+});
+
