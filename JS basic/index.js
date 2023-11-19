@@ -122,7 +122,6 @@ function ShowImg() {
 
 // Task 10
 document.querySelector(".blockCursor").onmousemove = function (event) {
-  // console.log(event);
   document.querySelector("#offx").innerHTML = event.offsetX;
   document.querySelector("#offy").innerHTML = event.offsetY;
 };
@@ -195,14 +194,52 @@ SmallBox.addEventListener("click", () => {
 });
 
 // Task 16
-let BigBtn = document.getElementById("btnShow"); 
+let BigBtn = document.getElementById("btnShow");
 let TransparentBlock = document.querySelector(".block_shodow");
 
 BigBtn.addEventListener("click", () => {
   TransparentBlock.style.display = "block";
-  document.body.style.overflow = 'hidden';
+  document.body.style.overflow = "hidden";
 });
 TransparentBlock.addEventListener("click", () => {
   TransparentBlock.style.display = "none";
+  document.body.style.overflow = "scroll";
 });
 
+// Task 17
+document.querySelector("form").addEventListener("submit", (event) => {
+  event.preventDefault();
+});
+
+// Task 18
+function FileName() {
+  const fileInput = document.getElementById('fileInput');
+  const selectedFile = document.getElementById('selectedFile');
+
+  if (fileInput.files.length > 0) {
+    selectedFile.textContent = `Обраний файл: ${fileInput.files[0].name}`;
+  } else {
+    selectedFile.textContent = " ";
+  }
+}
+
+const fileLabel = document.getElementById('fileLabel');
+
+fileLabel.addEventListener('dragover', function(event) {
+  event.preventDefault();
+  this.classList.add('dragover');
+});
+
+fileLabel.addEventListener('dragleave', function() {
+  this.classList.remove('dragover');
+});
+
+fileLabel.addEventListener('drop', function(event) {
+  event.preventDefault();
+  this.classList.remove('dragover');
+
+  const fileInput = document.getElementById('fileInput');
+  fileInput.files = e.dataTransfer.files;
+
+  FileName();
+});
