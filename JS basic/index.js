@@ -151,6 +151,22 @@ function showPosition(position) {
 }
 getLocation();
 
+// Task 13
+// localStorage
+let block1 = document.getElementById("block1");
+block1.innerHTML = localStorage.getItem("block1Content") || " ";
+
+block1.addEventListener("input", () => {
+  localStorage.setItem("block1Content", block1.innerHTML);
+});
+// sessionStorage
+let block3 = document.getElementById("block3");
+block3.innerHTML = sessionStorage.getItem("block3Content") || " ";
+
+block3.addEventListener("input", () => {
+  sessionStorage.setItem("block3Content", block3.innerHTML);
+});
+
 // Task 14
 function onEntry(entry) {
   entry.forEach((change) => {
@@ -213,8 +229,8 @@ document.querySelector("form").addEventListener("submit", (event) => {
 
 // Task 18
 function FileName() {
-  const fileInput = document.getElementById('fileInput');
-  const selectedFile = document.getElementById('selectedFile');
+  const fileInput = document.getElementById("fileInput");
+  const selectedFile = document.getElementById("selectedFile");
 
   if (fileInput.files.length > 0) {
     selectedFile.textContent = `Обраний файл: ${fileInput.files[0].name}`;
@@ -223,22 +239,22 @@ function FileName() {
   }
 }
 
-const fileLabel = document.getElementById('fileLabel');
+const fileLabel = document.getElementById("fileLabel");
 
-fileLabel.addEventListener('dragover', function(event) {
+fileLabel.addEventListener("dragover", function (event) {
   event.preventDefault();
-  this.classList.add('dragover');
+  this.classList.add("dragover");
 });
 
-fileLabel.addEventListener('dragleave', function() {
-  this.classList.remove('dragover');
+fileLabel.addEventListener("dragleave", function () {
+  this.classList.remove("dragover");
 });
 
-fileLabel.addEventListener('drop', function(event) {
+fileLabel.addEventListener("drop", function (event) {
   event.preventDefault();
-  this.classList.remove('dragover');
+  this.classList.remove("dragover");
 
-  const fileInput = document.getElementById('fileInput');
+  const fileInput = document.getElementById("fileInput");
   fileInput.files = e.dataTransfer.files;
 
   FileName();
