@@ -166,6 +166,14 @@ block3.innerHTML = sessionStorage.getItem("block3Content") || " ";
 block3.addEventListener("input", () => {
   sessionStorage.setItem("block3Content", block3.innerHTML);
 });
+// Cookies
+let block2 = document.getElementById("block2");
+block2.innerHTML = localStorage.getItem("block2Content") || " ";
+
+block2.addEventListener("input", () => {
+  localStorage.setItem("block2Content", block2.innerHTML);
+});
+
 
 // Task 14
 function onEntry(entry) {
